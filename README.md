@@ -6,8 +6,6 @@
 
 之前：
 ```javascript
-const Leadof = require('leadof');
-
 // 获取储存在redis的热帖列表
 async function getHotTip() {
   let ret = await redis.get('tip:hot');
