@@ -1,3 +1,7 @@
+/**
+ * 统一处理一批获取相同资源的请求
+ * @param {string} id leafof唯一索引
+ */
 function Leadof (id) {
   if (Leadof.instance[id]) {
     let instance = Leadof.instance[id];
@@ -35,3 +39,5 @@ Leadof.prototype.exec = async function(fn, ...args){
 };
 
 Leadof.instance = {};
+
+module.exports = Leadof;
